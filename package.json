@@ -4,7 +4,7 @@
   "scripts": {
     "lint": "eslint ./libs ./client ./server --ext .js --ext .jsx",
     "lintfix": "npm run lint -- --fix",
-    "testonly": "mocha client/**/tests/**/*.js --compilers js:babel-core/register",
+    "testonly": "mocha imports/**/tests/**/*.js --compilers js:babel-core/register",
     "test": "npm run lint && npm run testonly",
     "test-watch": "npm run testonly -- --watch --watch-extensions js,jsx"
   },
